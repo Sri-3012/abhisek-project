@@ -8,6 +8,7 @@ const initialState = {
   priceHistory: [],
   trades: [],
   notifications: [],
+  showNotificationsPopup: false,
   darkMode: false,
   loading: false,
   error: null
@@ -23,6 +24,7 @@ const ActionTypes = {
   ADD_NOTIFICATION: 'ADD_NOTIFICATION',
   SET_NOTIFICATIONS: 'SET_NOTIFICATIONS',
   MARK_NOTIFICATION_READ: 'MARK_NOTIFICATION_READ',
+  TOGGLE_NOTIFICATIONS_POPUP: 'TOGGLE_NOTIFICATIONS_POPUP',
   TOGGLE_DARK_MODE: 'TOGGLE_DARK_MODE',
   SET_LOADING: 'SET_LOADING',
   SET_ERROR: 'SET_ERROR'
@@ -67,6 +69,9 @@ function appReducer(state, action) {
             : notification
         )
       };
+    
+    case ActionTypes.TOGGLE_NOTIFICATIONS_POPUP:
+      return { ...state, showNotificationsPopup: !state.showNotificationsPopup };
     
     case ActionTypes.TOGGLE_DARK_MODE:
       return { ...state, darkMode: !state.darkMode };
@@ -169,6 +174,10 @@ export function AppProvider({ children }) {
 
     markNotificationRead: (id) => {
       dispatch({ type: ActionTypes.MARK_NOTIFICATION_READ, payload: id });
+    },
+
+    toggleNotificationsPopup: () => {
+      dispatch({ type: ActionTypes.TOGGLE_NOTIFICATIONS_POPUP });
     },
 
     toggleDarkMode: () => {

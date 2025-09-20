@@ -3,7 +3,7 @@ import Header from './Header';
 import PricePanel from './PricePanel';
 import ChartPanel from './ChartPanel';
 import TradeBlotter from './TradeBlotter';
-import NotificationsPanel from './NotificationsPanel';
+import NotificationsPopup from './NotificationsPopup';
 import TradeExecution from './TradeExecution';
 
 function Dashboard() {
@@ -24,19 +24,19 @@ function Dashboard() {
             <ChartPanel />
           </div>
           
-          {/* Right Column - Trade Execution, Blotter, and Notifications */}
+          {/* Right Column - Trade Execution and Trade Blotter */}
           <div className="lg:col-span-4 space-y-6">
             {/* Trade Execution */}
             <TradeExecution />
             
             {/* Trade Blotter */}
             <TradeBlotter />
-            
-            {/* Notifications */}
-            <NotificationsPanel />
           </div>
         </div>
       </div>
+      
+      {/* Notifications Popup */}
+      <NotificationsPopup />
     </div>
   );
 }
