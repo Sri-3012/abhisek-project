@@ -1,0 +1,481 @@
+# AlphaFxTrader - Git Ignore File
+
+# ===========================================
+# Node.js Dependencies
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===========================================
+# Frontend (React/Vite) Specific
+# ===========================================
+# Vite build output
+frontend/dist/
+frontend/build/
+
+# Vite cache
+frontend/.vite/
+
+# React build output
+frontend/build/
+frontend/dist/
+
+# Storybook build outputs
+frontend/storybook-static/
+
+# Temporary folders
+frontend/tmp/
+frontend/temp/
+
+# ===========================================
+# Backend (Node.js/Express) Specific
+# ===========================================
+# Database files
+backend/data/
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+
+# Log files
+backend/logs/
+backend/*.log
+backend/logs/*.log
+
+# Environment files
+backend/.env
+backend/.env.*
+backend/env.local
+backend/env.development.local
+backend/env.test.local
+backend/env.production.local
+
+# PM2 files
+backend/ecosystem.config.js
+backend/.pm2/
+
+# Backup files
+backend/backups/
+backend/*.backup
+backend/*.bak
+
+# Temporary files
+backend/tmp/
+backend/temp/
+backend/uploads/
+
+# ===========================================
+# Database Files
+# ===========================================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# PostgreSQL
+*.dump
+*.sql
+
+# MySQL
+*.sql.gz
+
+# ===========================================
+# IDE and Editor Files
+# ===========================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# Operating System Files
+# ===========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# Trading and Financial Data
+# ===========================================
+# Price data exports
+*.csv
+*.xlsx
+*.xls
+data/exports/
+data/backups/
+
+# Trading logs
+trading_logs/
+trade_history/
+performance_reports/
+
+# API keys and sensitive data
+api_keys.txt
+secrets.txt
+credentials.json
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ===========================================
+# Docker and Containerization
+# ===========================================
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+*.kubeconfig
+
+# ===========================================
+# Testing and Coverage
+# ===========================================
+# Jest
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ===========================================
+# Build and Distribution
+# ===========================================
+# Build outputs
+build/
+dist/
+out/
+
+# Package files
+*.tgz
+*.tar.gz
+
+# ===========================================
+# Documentation
+# ===========================================
+# Generated documentation
+docs/build/
+docs/_build/
+docs/.doctrees/
+
+# ===========================================
+# Monitoring and Logging
+# ===========================================
+# Log files
+logs/
+*.log
+*.log.*
+
+# Monitoring data
+monitoring/
+metrics/
+grafana-data/
+prometheus-data/
+
+# ===========================================
+# Security and Compliance
+# ===========================================
+# Security scans
+security-reports/
+vulnerability-reports/
+
+# Compliance reports
+compliance/
+audit-logs/
+
+# ===========================================
+# Backup and Archive
+# ===========================================
+# Backup files
+backups/
+*.backup
+*.bak
+*.archive
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ===========================================
+# Custom Project Files
+# ===========================================
+# AlphaFxTrader specific
+trading_sessions/
+algorithm_performance/
+backtest_results/
+risk_management_rules/
+
+# Configuration overrides
+config.local.js
+config.local.json
+
+# Temporary analysis files
+analysis/
+reports/
+exports/
+
+# ===========================================
+# Development Tools
+# ===========================================
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# Stylelint cache
+.stylelintcache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ===========================================
+# Miscellaneous
+# ===========================================
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
+
+# ===========================================
+# Keep Important Files
+# ===========================================
+# Keep example files
+!env.example
+!*.example
+!*.sample
+
+# Keep documentation
+!README.md
+!README_BACKEND.md
+!docs/
+!*.md
+
+# Keep configuration templates
+!package.json
+!package-lock.json
+!yarn.lock
+!tsconfig.json
+!tailwind.config.js
+!vite.config.js
+!postcss.config.js
+
+# Keep Docker files
+!Dockerfile
+!docker-compose.yml
+!docker-compose.prod.yml
+
+# Keep CI/CD files
+!.github/
+!.gitlab-ci.yml
+!Jenkinsfile
+
+# Keep license and legal files
+!LICENSE
+!LICENSE.txt
+!COPYING
+!COPYING.txt
