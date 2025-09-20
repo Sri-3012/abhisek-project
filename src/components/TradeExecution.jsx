@@ -134,7 +134,7 @@ function TradeExecution() {
               <div className="flex items-center space-x-2">
                 <SignalIcon className={`w-5 h-5 text-${signalColor}-600`} />
                 <span className="font-semibold text-gray-900 dark:text-white">
-                  AI Recommendation
+                  Recommendations
                 </span>
               </div>
               <div className="flex items-center space-x-2">
